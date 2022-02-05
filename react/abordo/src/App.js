@@ -1,8 +1,8 @@
 
-//import './App.css';
+import './App.css';
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import Rodape from './components/Rodape';
 function App() {
   return (
     <>
@@ -30,7 +30,13 @@ function App() {
      <h1>aqui e a pagina <strong>home</strong></h1>
      
     </header>
-    </>    
+
+    
+
+
+    </>  
+    
+    
   );
 }
 export default App;
