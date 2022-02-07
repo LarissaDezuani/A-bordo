@@ -36,36 +36,32 @@
 			<hr>
 			<h3>Cadastro de Clientes</h3>
 			<hr>
-			<form action="Destino.CreateAndFind" method="POST">
+			<form action="CreateAndFind" method="POST">
 				<div class="form-floating mb-3">
-						<input name="localSaidaDestino" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
-						<label>localSaidaDestino</label>
+						<input name="nome" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<label>Nome completo</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="localDestino" maxlength="11" type="text" class="form-control"> 
-						<label>localDestino (apenas números)</label>
+						<input name="cpf" maxlength="11" type="text" class="form-control"> 
+						<label>CPF (apenas números)</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="cpfCli" type="text" class="form-control" placeholder="Nascimento">
-						<label>cpfCli</label>
+						<input name="nascimento" type="date" class="form-control" placeholder="Nascimento">
+						<label>Nascimento</label>
 					</div>
-					<div class="form-floating mb-3">
-						<input name="horaDestino" type="text" class="form-control" placeholder="Nascimento">
-						<label>horaDestino</label>
-					</div>
-					<div class="form-floating mb-3">
-						<input name="dataDestino" type="date" class="form-control" placeholder="Nascimento">
-						<label>dataDestino</label>
-					</div>
-					
+					<select name="situacao" class="form-select mb-3" aria-label="Default select example">
+						<option value="Inativo" selected>-- Selecione a situação</option>
+						<option value="Ativo">Ativo</option>
+						<option value="Inativo">Inativo</option>
+					</select>
 
 					<button class="btn btn-primary" type="submit">Cadastrar
-						destino</button>
+						Cliente</button>
 					<button class="btn btn-secondary" type="reset">Limpar
 						Formulário</button>
 			</form>
 			<br>
-			<h5><a href="Destino.CreateAndFind">Lista de Destinos</a></h5>
+			<h5><a href="CreateAndFind">Lista de Clientes</a></h5>
 		</div>
 		
 	</div>

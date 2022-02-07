@@ -1,9 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>CRUD Java - Cadastro de Cliente | Home</title>
-<!-- CSS only -->
+<title>CRUD Java - Atualizar Cliente</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
@@ -16,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="cliente.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="CreateAndFind">Lista de Clientes</a>
@@ -34,38 +36,34 @@
 	<div class="row">
 		<div class="cold-md-7">
 			<hr>
-			<h3>Cadastro de Clientes</h3>
+			<h3>Atualizar Cliente</h3>
 			<hr>
-			<form action="Destino.CreateAndFind" method="POST">
-				<div class="form-floating mb-3">
-						<input name="localSaidaDestino" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
-						<label>localSaidaDestino</label>
+			<form action="ClienteUpdate" method="POST">
+					<input value="${cliente.id}" name="id" type="number" style="visibility:hidden">
+					<div class="form-floating mb-3">
+						<input value="${cliente.nome}" name="nome" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<label>Nome completo</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="localDestino" maxlength="11" type="text" class="form-control"> 
-						<label>localDestino (apenas n�meros)</label>
+						<input value="${cliente.cpf}" name="cpf" maxlength="11" type="text" class="form-control"> 
+						<label>CPF (apenas números)</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="cpfCli" type="text" class="form-control" placeholder="Nascimento">
-						<label>cpfCli</label>
+						<input value="${cliente.nascimento}" name="nascimento" type="date" class="form-control" placeholder="Nascimento">
+						<label>Nascimento</label>
 					</div>
-					<div class="form-floating mb-3">
-						<input name="horaDestino" type="text" class="form-control" placeholder="Nascimento">
-						<label>horaDestino</label>
-					</div>
-					<div class="form-floating mb-3">
-						<input name="dataDestino" type="date" class="form-control" placeholder="Nascimento">
-						<label>dataDestino</label>
-					</div>
-					
+					<select name="situacao" class="form-select mb-3" aria-label="Default select example">
+						<option value="Inativo" selected>-- Selecione a Situação</option>
+						<option value="Ativo">Ativo</option>
+						<option value="Inativo">Inativo</option>
+					</select>
 
-					<button class="btn btn-primary" type="submit">Cadastrar
-						destino</button>
+					<button class="btn btn-success" type="submit">Atualizar
+						Dados</button>
 					<button class="btn btn-secondary" type="reset">Limpar
-						Formul�rio</button>
+						Formulário</button>
 			</form>
 			<br>
-			<h5><a href="Destino.CreateAndFind">Lista de Destinos</a></h5>
 		</div>
 		
 	</div>

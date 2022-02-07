@@ -16,4 +16,7 @@ public interface CRUD {
 	public static Cadastro findByPk(int clienteId) {return null;}
 	public static void update(Cadastro cadastro) {}
 	
+	
+	
+	
 }

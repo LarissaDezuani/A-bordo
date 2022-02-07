@@ -11,6 +11,7 @@ public class Cadastro {
 	public void setIdCli(int idCli) {
 		this.idCli = idCli;
 	}
+	
 	public String getNomeCli() {
 		return nomeCli;
 	}
@@ -71,7 +72,7 @@ public class Cadastro {
 	public void setSituacao(String situacao) {
 		Situacao = situacao;
 	}
-	@Override
+	
 	public String toString() {
 		return "Cadastro [idCli=" + idCli + ", nomeCli=" + nomeCli + ", CPFCli=" + CPFCli + ", NasCli=" + NasCli
 				+ ", CEPCli=" + CEPCli + ", enderecoCli=" + enderecoCli + ", bairroCli=" + bairroCli + ", numeroCli="

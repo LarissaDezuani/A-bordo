@@ -1,7 +1,6 @@
 package controllers;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,16 +15,16 @@ import dao.DestinoDao;
 import model.Destino;
 
 /**
- * Servlet implementation class DestinoCreateAndFind
+ * Servlet implementation class DestinoFindAndUpdate
  */
-@WebServlet("/Destino.CreateAndFind")
-public class DestinoCreateAndFind extends HttpServlet {
+@WebServlet("/DestinoUpdate")
+public class DestinoFindAndUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DestinoCreateAndFind() {
+    public DestinoFindAndUpdate() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,17 +34,12 @@ public class DestinoCreateAndFind extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String pesquisa = request.getParameter("pesquisa");
+		int destinoId = Integer.parseInt(request.getParameter("destinoId"));
+		Destino destino = DestinoDao.findByPk(destinoId);
 		
-		if(pesquisa == null) {
-			pesquisa="";
-		}
-		
-		List<Destino> destinos = DestinoDao.find(pesquisa);
-		
-		request.setAttribute("destinos", destinos);
-		RequestDispatcher resquesDispatcher = request.getRequestDispatcher("listaDestino.jsp");
-		resquesDispatcher.forward(request, response);	}
+		request.setAttribute("destino", destino);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("formUpdateDestino.jsp");
+		requestDispatcher.forward(request, response);	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -53,15 +47,17 @@ public class DestinoCreateAndFind extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 Destino destino = new Destino();
 		
+		destino.setIdDestino(Integer.parseInt(request.getParameter("idDestino")));
 		destino.setLocalSaidaDestino(request.getParameter("localSaidaDestino"));
 		destino.setLocalDestino(request.getParameter("localDestino"));
 		destino.setCpfCli(request.getParameter("cpfCli"));
 		destino.setHoraDestino(request.getParameter("horaDestino"));
 		destino.setDataDestino(request.getParameter("dataDestino"));
 
-		DestinoDao.create(destino);
+		DestinoDao.update(destino);
 		
-		doGet(request, response);
+		DestinoCreateAndFind destinoCreateAndFind = new DestinoCreateAndFind();
+		destinoCreateAndFind.doGet(request, response);
 	}
 
 }

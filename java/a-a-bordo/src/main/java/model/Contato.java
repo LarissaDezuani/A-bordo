@@ -27,11 +27,13 @@ public class Contato {
 	public void setMsgContato(String msgContato) {
 		this.msgContato = msgContato;
 	}
-	@Override
+	
 	public String toString() {
 		return "Contato [idContato=" + idContato + ", nomeContato=" + nomeContato + ", emailContato=" + emailContato
 				+ ", msgContato=" + msgContato + "]";
 	}
+	
+	
 	
 	
 	

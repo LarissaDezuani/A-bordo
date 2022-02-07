@@ -50,16 +50,18 @@ public class CadastroDao implements CRUD {
 	}
 	
 	public static void delete(int clienteId) {
+		//atribui a variavel estatica sql 
     sql = "DELETE FROM cadastros WHERE idCli = ?";
 		
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			
+			//1=? e indice e um pq so tem ele 
 			preparedStatement.setInt(1, clienteId);
 			preparedStatement.executeUpdate();
 			
 			System.out.println("--correct delete on cadastro");
-			
+		
+		//e = erro	
 		} catch (SQLException e) {
 			System.out.println("--incorrect delete on cadastro. " + e.getMessage());
 		}
@@ -88,7 +90,7 @@ public class CadastroDao implements CRUD {
 		while(resultSet.next()) {
 			
 			Cadastro cadastro = new Cadastro();
-			//resultSet = metodo do resultSet= getInt e passa o nome da colona = idCli 
+			//resultSet = metodo do resultSet= getInt e passa o nome da colona = idCli, setar o id...
 			cadastro.setIdCli(resultSet.getInt("idCli"));
 			cadastro.setNomeCli(resultSet.getString("nomeCli"));
 			cadastro.setCPFCli(resultSet.getString("CPFCli"));
@@ -128,12 +130,86 @@ public class CadastroDao implements CRUD {
 	
 	//String pesquisa = parametro
 	public static Cadastro findByPk(int clienteId) {
-		return null;
 		
+		//ele e parecido com o select
+		//oque muda e a string sql e muda o id
+		//e pega somente um cadastro
+		
+		
+		sql = String.format("SELECT * FROM cadastros WHERE idCli = %d", clienteId);
+		// %d = e inteiro nao precisa de aspas simples
+
+		//instrucao de consulta atribuida a variavel sql
+
+try {
+	
+	
+	//instanciar a variavel statement= recebe a variavel = connection.createStatement
+	Statement statement = connection.createStatement();
+	ResultSet resultSet = statement.executeQuery(sql);
+	Cadastro cadastro = new Cadastro();
+
+	
+	//resultset com u metodo dele chamado next = mostra os resultados vindo do banco de dados
+	
+	//enquanto tiver resultado da minha busca 
+	//vai instanciar o cadastro
+	while(resultSet.next()) {
+		
+		//resultSet = metodo do resultSet= getInt e passa o nome da colona = idCli, setar o id...
+		cadastro.setIdCli(resultSet.getInt("idCli"));
+		cadastro.setNomeCli(resultSet.getString("nomeCli"));
+		cadastro.setCPFCli(resultSet.getString("CPFCli"));
+		cadastro.setNasCli(resultSet.getString("NasCli"));
+		cadastro.setCEPCli(resultSet.getString("CEPCli"));
+		cadastro.setEnderecoCli(resultSet.getString("enderecoCli"));
+		cadastro.setBairroCli(resultSet.getString("bairroCli"));
+		cadastro.setNumeroCli(resultSet.getString("numeroCli"));
+		cadastro.setTelefoneCli(resultSet.getString("telefoneCli"));
+		cadastro.setEmailCli(resultSet.getString("emailCli"));
+		cadastro.setSituacao(resultSet.getString("Situacao"));
+
+		//vai setar os dados e adicionar o cliente na list de clientes	
+	
 	}
 	
-	public static void update(Cadastro cadastro) {
+	System.out.println("---correct find by pk cadastro");
+	return cadastro;
 		
+	} catch(SQLException e) {
+		//mostra o erro da excessao
+		System.out.println("--- inorrect find by pk cadastro" + e.getMessage());
+
+		return null;
+	}
+}
+	
+	public static void update(Cadastro cadastro) {
+	sql= "UPDATE cadastros SET nomeCli=?, CPFCli=?, NasCli=?, CEPCli=?, enderecoCli=? ,  bairroCli=?, numeroCli=?,telefoneCli=?, emailCli=?, Situacao=? WHERE  idCli=?";
+		
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			
+			preparedStatement.setString(1, cadastro.getNomeCli());
+			preparedStatement.setString(2, cadastro.getCPFCli());
+			preparedStatement.setString(3, cadastro.getNasCli());
+			preparedStatement.setString(4, cadastro.getCEPCli());
+			preparedStatement.setString(5, cadastro.getEnderecoCli());
+			preparedStatement.setString(6, cadastro.getBairroCli());
+			preparedStatement.setString(7, cadastro.getNumeroCli());
+			preparedStatement.setString(8, cadastro.getTelefoneCli());
+			preparedStatement.setString(9, cadastro.getEmailCli());
+			preparedStatement.setString(10, cadastro.getSituacao());
+			preparedStatement.setInt(11, cadastro.getIdCli());
+
+			preparedStatement.executeUpdate();
+			    
+			System.out.println("--- dados atualizados e inseridos no banco de dados");
+
+		}catch(SQLException e){
+			System.out.println("--- erro na inserção de dados no banco de dados" + e.getMessage());
+
+		}
 	}
 	
 }

@@ -5,7 +5,7 @@ public class Destino {
 	
 	
 	private int idDestino;
-	private String horaDestino, localSaidaDestino, localDestino, dataDestino, CPFCli ;
+	private String horaDestino, localSaidaDestino, localDestino, dataDestino, cpfCli ;
 	public int getIdDestino() {
 		return idDestino;
 	}
@@ -36,18 +36,20 @@ public class Destino {
 	public void setDataDestino(String dataDestino) {
 		this.dataDestino = dataDestino;
 	}
-	public String getCPFCli() {
-		return CPFCli;
+	public String getCpfCli() {
+		return cpfCli;
 	}
-	public void setCPFCli(String cPFCli) {
-		CPFCli = cPFCli;
+	public void setCpfCli(String cpfCli) {
+		this.cpfCli = cpfCli;
 	}
 	@Override
 	public String toString() {
 		return "Destino [idDestino=" + idDestino + ", horaDestino=" + horaDestino + ", localSaidaDestino="
-				+ localSaidaDestino + ", localDestino=" + localDestino + ", dataDestino=" + dataDestino + ", CPFCli="
-				+ CPFCli + "]";
+				+ localSaidaDestino + ", localDestino=" + localDestino + ", dataDestino=" + dataDestino + ", cpfCli="
+				+ cpfCli + "]";
 	}
+	
+	
 	
 	
 	
