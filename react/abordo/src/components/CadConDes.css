@@ -85,7 +85,9 @@ justify-content alinha as divs horisontalmente*/
     border-radius: 2px;
     
     width:459px;
-    box-shadow: 0 2px 20px #260120;    
+    box-shadow: 0 2px 20px #260120;
+    
+    margin-top: 174px;
     }
     
     .card-header {

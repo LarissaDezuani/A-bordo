@@ -7,12 +7,12 @@ import fernando from './fernannoronha.jpg';
 import amazonas from './amazonas.jpg';
 import bahia from './bahia.jpeg'
 import './Promocoes.css';
-import App from '../App';
+
 function Promocoes(){
     return(
      
 <div>
-  <App></App>
+  
     <Topo></Topo>
     <main className='conteudo'>
 

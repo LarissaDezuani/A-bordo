@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import App  from "../App"
-import Rodape from './Rodape';
-import './CadConDes.css'
+//import App  from "../App"
 import Topo from '../topo/Topo'
+import './CadConDes.css'
+
 const Contato = () => {
     return(
         <div>
@@ -44,7 +44,7 @@ const Contato = () => {
 
 
 
-<Rodape></Rodape>
+
 
                
             

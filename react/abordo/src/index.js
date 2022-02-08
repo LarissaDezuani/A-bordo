@@ -8,6 +8,7 @@ import Contato from "./components/Contato"
 import Destino from "./components/Destino"
 import Cadastro from "./components/Cadastro"
 import Promocoes from "./components/Promocoes"
+import Index from './components/index'
 
 //ReactDOM e parametro = render
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route element = { <Destino/> } path="/destino"/>
         <Route element = { <Cadastro/> } path="/cadastro"/>
         <Route element = { <Promocoes/> } path="/promocoes" />
+        <Route element = { <Index/> } path="/index" />
       </Routes>
   </BrowserRouter>,
   document.getElementById('root')

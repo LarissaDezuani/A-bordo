@@ -16,6 +16,8 @@ body {
   width: 1040px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  margin-top: 89px;
  
 }
 .cards {
@@ -40,7 +42,7 @@ body {
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
-  margin-top: -38px;
+  
 }
 
 .tag {

@@ -1,19 +1,16 @@
 
-
+import './App.css';
 import React from 'react';
-//import { Link } from "react-router-dom";
-//import Rodape from './components/Rodape'
+import { Link } from "react-router-dom";
+
 import Topo from './topo/Topo'
-import Promocoes from './components/Promocoes'
 function App() {
   return (
     <>
-    <Topo></Topo>
-    <Promocoes></Promocoes>
-    
- 
-    
+         <Topo></Topo>
         
+    
+
 
     </>  
     

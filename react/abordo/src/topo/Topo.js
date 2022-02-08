@@ -17,7 +17,7 @@ function Topo (){
         <nav class="float-r">
           <ul class="list-auto">
             <li>
-              <a href="#home" ><Link to="/"><h5>Home</h5></Link></a>
+              <a  ><Link to="/index"><h5>Home</h5></Link></a>
             </li>
             <li>
                 
