@@ -9,23 +9,27 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html">A-bordo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="cliente.html">Home</a>
+       <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="CreateAndFind">Lista de Clientes</a>
+          <a class="nav-link" href="contato.html">Contato</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destino.html">Destino</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="cliente.html">Cadastro</a>
+        </li>
+         
       </ul>
-      <form action="CreateAndFind" method="GET" class="d-flex">
-        <input name="pesquisa" class="form-control me-2" type="search" placeholder="Digite o Nome ou CPF" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+     
     </div>
   </div>
 </nav>
@@ -36,28 +40,28 @@
 			<hr>
 			<h3>Cadastro de Clientes</h3>
 			<hr>
-			<form action="CreateAndFind" method="POST">
+			<form action="Contato.CreateAndFind" method="POST">
 				<div class="form-floating mb-3">
-						<input name="nomeContato" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<input name="nomeContato" maxlength="40" type="text" class="form-control" id="floatingInput1"  placeholder="Nome"> 
 						<label>Nome completo</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="emailContato" maxlength="11" type="text" class="form-control"> 
+						<input name="emailContato"  type="text" class="form-control"  placeholder="E-mail"> 
 						<label>E-mail</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="msgContato" type="date" class="form-control" placeholder="Nascimento">
+						<input name="msgContato" type="text" class="form-control" placeholder="Mensagem">
 						<label>Mensagem</label>
 					</div>
 					
 
 					<button class="btn btn-primary" type="submit">Cadastrar
-						Cliente</button>
+						Contato</button>
 					<button class="btn btn-secondary" type="reset">Limpar
 						Formulário</button>
 			</form>
 			<br>
-			<h5><a href="CreateAndFind">Lista de Clientes</a></h5>
+			<h5><a href="Contato.CreateAndFind">Lista de Contatos</a></h5>
 		</div>
 		
 	</div>

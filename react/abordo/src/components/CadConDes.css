@@ -2,9 +2,9 @@
 .botao{
     align-content: center;
     background-color: rgb(255, 255, 255);
-    border-color: rgb(0, 0, 0); 
+    border-color: #260120; 
     border-style: solid;
-    color: #000;
+    color: #260120;
     font-size: 120%;
     border-radius: 15px;
     cursor: pointer;
@@ -20,9 +20,9 @@
 
 justify-content alinha as divs horisontalmente*/
 .botao:hover{
-    background-color: #000;
+    background-color: #260120;
     color: rgb(253, 253, 253);
-    border-color: #000;
+    border-color: #260120;
 
     transition-duration: 700ms;
     transition-timing-function: ease-in-out ;
@@ -85,8 +85,7 @@ justify-content alinha as divs horisontalmente*/
     border-radius: 2px;
     
     width:459px;
-      box-shadow: 0 9px 25px #000000, 0 15px 12px rgba(0,0,0,0.22);
-    
+    box-shadow: 0 2px 20px #260120;    
     }
     
     .card-header {
@@ -121,6 +120,10 @@ justify-content alinha as divs horisontalmente*/
     
     
     
+    
+    }
+    .card-content-area textarea{
+        resize: none;
     }
     .card-content-area input{
         
@@ -130,6 +133,7 @@ justify-content alinha as divs horisontalmente*/
     .card-content-area area{
        
         height: 27px;
+        resize: none;
     }
     
     .card-footer {

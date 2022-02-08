@@ -7,6 +7,7 @@ import Sobre from "./components/Sobre"
 import Contato from "./components/Contato"
 import Destino from "./components/Destino"
 import Cadastro from "./components/Cadastro"
+import Promocoes from "./components/Promocoes"
 
 //ReactDOM e parametro = render
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route element = { <Contato/> } path="/contato"/>
         <Route element = { <Destino/> } path="/destino"/>
         <Route element = { <Cadastro/> } path="/cadastro"/>
+        <Route element = { <Promocoes/> } path="/promocoes" />
       </Routes>
   </BrowserRouter>,
   document.getElementById('root')

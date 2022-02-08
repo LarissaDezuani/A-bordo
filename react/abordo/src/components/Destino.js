@@ -1,41 +1,56 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import Topo from '../topo/Topo';
 import App  from "../App"
-import Rodape from './Rodape';
+//import Rodape from './Rodape';
 import './CadConDes.css'
 const Destino = () => {
     return(
         <div>
-                <App/>
+                <Topo></Topo>
                 
                 <div id="contato">
         <form class="card">
-
-            <h2>Entre em contato</h2>
-
+            <h2>PASSAGENS</h2>
+            
             <div class="card-content-area">
-                <label for="nome">Nome:</label>
+                <label for="cpfCli">Digite seu CPF?</label>
                 
-                <input type="text" id="nome" name="nome"></input>
+                <input type="text" id="cpfCli" name="cpfCli"></input>
                 
             </div>
             <div class="card-content-area">
+                <label for="localSaidaDestino">De onde você está saindo?</label>
                 
-            <label for="email">E-mail:</label>
-            
-            <input type="email" id="email" name="email"></input>
-           
+                <input type="text" id="localSaidaDestino" name="localSaidaDestino"></input>
+                
             </div>
             
             <div class="card-content-area">
-                <label for="msg">Mensagem:</label>
-            <textarea id="msg" name="msg" rows="3" cols="60" maxlength="10" placeholder="Insira aqui a mensagem"></textarea>
+                
+                <label for="localDestino">Para onde você vai?</label>
+                
+                <input type="text" id="localDestino" name="localDestino"></input>
+               
+                </div>
+                <div class="card-content-area">
+                
+                <label for="horaDestino">Hora?</label>
+                
+                <input type="text" id="horaDestino" name="horaDestino"></input>
+               
+                </div>
+                <div class="card-content-area">
+                
+                <label for="dataDestino">Escolha a data?</label>
+                
+                <input type="date" id="dataDestino" name="dataDestino"></input>
+               
+                </div>
             
-            </div>
            <div>
             
-            <a href="#"><input class="botao" type="submit" value="Enviar"></input> </a>        
+            <a href="#"><input class="botao" type="submit" value="Buscar"></input> </a>        
         
  
            </div> 
@@ -46,7 +61,7 @@ const Destino = () => {
 
 
 
-                <Rodape></Rodape>
+                
             
         </div>
     )

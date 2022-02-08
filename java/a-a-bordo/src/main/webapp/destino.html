@@ -9,23 +9,27 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html">A-bordo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="cliente.html">Home</a>
+       <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="CreateAndFind">Lista de Clientes</a>
+          <a class="nav-link" href="contato.html">Contato</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destino.html">Destino</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="cliente.html">Cadastro</a>
+        </li>
+        
       </ul>
-      <form action="CreateAndFind" method="GET" class="d-flex">
-        <input name="pesquisa" class="form-control me-2" type="search" placeholder="Digite o Nome ou CPF" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+      
     </div>
   </div>
 </nav>
@@ -34,28 +38,28 @@
 	<div class="row">
 		<div class="cold-md-7">
 			<hr>
-			<h3>Cadastro de Clientes</h3>
+			<h3>Cadastro de Destino</h3>
 			<hr>
 			<form action="Destino.CreateAndFind" method="POST">
 				<div class="form-floating mb-3">
-						<input name="localSaidaDestino" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
-						<label>localSaidaDestino</label>
+						<input name="localSaidaDestino" type="text" class="form-control" id="floatingInput1" placeholder="Saida"> 
+						<label>Saida</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="localDestino" maxlength="11" type="text" class="form-control"> 
-						<label>localDestino (apenas números)</label>
+						<input name="localDestino" type="text" class="form-control" placeholder="Destino"> 
+						<label>Destino</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="cpfCli" type="text" class="form-control" placeholder="Nascimento">
-						<label>cpfCli</label>
+						<input name="cpfCli" maxlength="11"  type="text" class="form-control" placeholder="CPF">
+						<label>CPF</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="horaDestino" type="text" class="form-control" placeholder="Nascimento">
-						<label>horaDestino</label>
+						<input name="horaDestino" type="text" class="form-control" placeholder="Hora">
+						<label>Hora</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input name="dataDestino" type="date" class="form-control" placeholder="Nascimento">
-						<label>dataDestino</label>
+						<input name="dataDestino" type="date" class="form-control" placeholder="Data">
+						<label>Data</label>
 					</div>
 					
 

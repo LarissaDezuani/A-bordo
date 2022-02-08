@@ -11,23 +11,27 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.html">A-bordo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+       <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="CreateAndFind">Lista de Clientes</a>
+          <a class="nav-link" href="contato.html">Contato</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destino.html">Destino</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="cliente.html">Cadastro</a>
+        </li>
+         
       </ul>
-      <form action="CreateAndFind" method="GET" class="d-flex">
-        <input name="pesquisa" class="form-control me-2" type="search" placeholder="Digite o Nome ou CPF" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+      
     </div>
   </div>
 </nav>
@@ -49,7 +53,7 @@
 						<label>CPF (apenas números)</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input value="${cliente.nascimento}" name="nascimento" type="date" class="form-control" placeholder="Nascimento">
+						<input value="${cliente.nascimento}" name="nascimento" type="date" class="form-control" placeholder="">
 						<label>Nascimento</label>
 					</div>
 					<select name="situacao" class="form-select mb-3" aria-label="Default select example">

@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import App  from "../App"
+//import App  from "../App"
 import Rodape from './Rodape';
 import './CadConDes.css'
-
+import Topo from '../topo/Topo';
 const Cadastro = () => {
     return(
         <div>
-                <App/>
-                
+            
+               
+                <Topo></Topo>
                 <div id="contato">
         <form class="card">
 
-            <h2>Entre em contato</h2>
+            <h2>Cadastro</h2>
 
             <div class="card-content-area">
                 <label for="nome">Nome:</label>
@@ -22,17 +23,21 @@ const Cadastro = () => {
             </div>
             <div class="card-content-area">
                 
-            <label for="email">E-mail:</label>
+            <label for="cpf">CPF:</label>
             
-            <input type="email" id="email" name="email"></input>
+            <input type="text" id="cpf" name="cpf"></input>
+           
+            </div>
+            <div class="card-content-area">
+                
+            <label for="nascimento">Nascimento:</label>
+            
+            <input type="date" id="nascimento" name="nascimento"></input>
            
             </div>
             
-            <div class="card-content-area">
-                <label for="msg">Mensagem:</label>
-            <textarea id="msg" name="msg" rows="3" cols="60" maxlength="10" placeholder="Insira aqui a mensagem"></textarea>
             
-            </div>
+           
            <div>
             
             <a href="#"><input class="botao" type="submit" value="Enviar"></input> </a>        
@@ -46,7 +51,7 @@ const Cadastro = () => {
 
 
 
-                <Rodape></Rodape>
+              
             
         </div>
     )
