@@ -7,13 +7,15 @@ import fernando from './fernannoronha.jpg';
 import amazonas from './amazonas.jpg';
 import bahia from './bahia.jpeg'
 import './Promocoes.css';
+import Rodape from '../rodape/Rodape'
 
+import App from '../App'
 function Promocoes(){
     return(
      
 <div>
   
-    <Topo></Topo>
+    <App></App>
     <main className='conteudo'>
 
     
@@ -24,18 +26,18 @@ function Promocoes(){
         <img src={saopaulo} alt="rover" />
       </div>
       <div className="cards-body">
-        
         <h4>
          São Paulo
         </h4>
         <p>
-            São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica
+            São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais
         </p>
         <p>
             De R$100,00 por R$70,00
         </p>
 
- 
+        <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a>        
+
            
       </div>
     </div>
@@ -54,6 +56,7 @@ function Promocoes(){
         <p>
             De R$100,00 por R$70,00
         </p>  
+        <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a> 
       </div>
     </div>
     <div className="cards">
@@ -66,13 +69,13 @@ function Promocoes(){
           Rio de Janeiro
         </h4>
         <p>
-            O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor
+            O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias, pela estátua do Cristo Redentor
         </p>
         <p>
             De R$100,00 por R$70,00
         </p>
         
-            
+        <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a>    
         
  
             
@@ -88,11 +91,12 @@ function Promocoes(){
             Fernando de noronha
           </h4>
           <p>
-            Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350 quilómetros ao largo da costa nordeste do Brasil.
+            Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350 quilómetros ao largo da costa nordeste 
           </p>
           <p>
               De R$100,00 por R$70,00
         </p>
+        <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a> 
         </div>
       </div> 
       <div className="cards">
@@ -110,7 +114,7 @@ function Promocoes(){
           <p>
             De R$100,00 por R$70,00
           </p>
- 
+          <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a> 
           
         </div>
       </div> 
@@ -124,15 +128,17 @@ function Promocoes(){
           Alagoas
           </h4>
           <p>
-          Alagoas é um pequeno estado do nordeste brasileiro cujo litoral tropical é marcado por praias de areia branca repletas de palmeiras, lagoas cristalinas e recifes de corais          </p>
+          Alagoas é um pequeno estado do nordeste brasileiro cujo litoral tropical é marcado por praias de areia branca repletas de palmeiras  
+          </p>
           <p>
               De R$100,00 por R$70,00
-            </p>
- 
+          </p>
+          <a href="#"><input class="btnbotao" type="submit" value="ver mais"></input> </a> 
         </div>
       </div>
       </div> 
     </main>
+    <Rodape></Rodape>
 </div>
 
 

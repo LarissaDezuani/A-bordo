@@ -3,6 +3,15 @@
   box-sizing: border-box;
 }
 body {
+  
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+.conteudo{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +37,9 @@ body {
   overflow: hidden;
   width: 300px;
 }
+.cards:hover{
+  transform: scale(1.05);
+}
 .cards-header img {
   width: 100%;
   height: 200px;
@@ -42,6 +54,8 @@ body {
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
+
+  align-items: center;
   
 }
 
@@ -98,27 +112,27 @@ body {
   }
 }
 
-.botaoo{
+.btnbotao{
   align-content: center;
   background-color: rgb(255, 255, 255);
-  border-color: #260120; 
+  border-color: #260120;
   border-style: solid;
   color: #260120;
   font-size: 120%;
-  border-radius: 15px;
+  border-radius: 13px;
   cursor: pointer;
-
-  width: 86px;
-  height: 45px;
-  margin-top: 10px;
+  width: 191px;
+  height: 35px;
+  margin-top: 1px;
   margin-left: 1%;
+
   /*display: block;
   margin: 0 auto;*/
 }
 /*O alling- content alinha as divs verdicalmente
 
 justify-content alinha as divs horisontalmente*/
-.botaoo:hover{
+.btnbotao:hover{
   background-color: #260120;
   color: rgb(253, 253, 253);
   border-color: #260120;
@@ -127,3 +141,4 @@ justify-content alinha as divs horisontalmente*/
   transition-timing-function: ease-in-out ;
   /*de fora para dentro a transição de cores*/
 }
+

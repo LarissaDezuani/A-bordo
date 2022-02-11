@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 //import Rodape from './Rodape';
 import './CadConDes.css'
 import Topo from '../topo/Topo';
+import Rodape from '../rodape/Rodape'
+import App from '../App'
 const Cadastro = () => {
     return(
         <div>
             
-                
-                <Topo></Topo>
+                <App></App>
                 <div id="contato">
         <form class="card">
 
@@ -49,7 +50,7 @@ const Cadastro = () => {
 
 
                
-            
+            <Rodape></Rodape>
         </div>
     )
 }
