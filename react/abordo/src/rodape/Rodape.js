@@ -1,6 +1,6 @@
 import './Rodape.css'
-import insta from '../rodape/instagram.png'
-import face from './facebook.png'
+import insta from '../rodape/instaroxo.png'
+import face from './faceroxo.png'
 import { Link } from "react-router-dom";
 
 
@@ -18,8 +18,9 @@ function Rodape(){
             </div>
             <div class="box">
                 
-                <a ><Link to="/sobre"><h2>Sobre nossa história</h2></Link></a>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                
+                <p>A agência A bordo promove segurança nas atividades de turismo por meio da conscientização e disponibilização de conhecimentos técnicos</p>
+                <a ><Link to="/sobre"><h2>Saiba mais sobre nossa história</h2></Link></a>
             </div>
             <div class="box">
                 <h2>Siga-nos</h2>

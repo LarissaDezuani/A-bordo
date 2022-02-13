@@ -7,9 +7,9 @@ const Sobre = () => {
     return(
         <div >
             <App/>
-            <h1>aqui e a pagina <strong>Sobre</strong></h1>
             
-            <Rodape></Rodape>
+
+            
             
                 
         </div>

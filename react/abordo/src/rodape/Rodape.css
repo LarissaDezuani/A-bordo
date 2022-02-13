@@ -1,6 +1,6 @@
 
 .rodape{
-    background-color: black;
+    background-color: #260120;
     color: white;
     flex-shrink: 0;
     
@@ -17,7 +17,7 @@
 /*:::::Pie de Pagina*/
 .rodape{
     width: 100%;
-    background-color: #260120;
+    background-color: #D8D8D8;
     /* position: absolute; */
 	bottom: 0;
     margin-top: 100px; 
@@ -42,12 +42,12 @@
     width: 250px;
 }
 .rodape .grupo-1 .box h2{
-    color: #fff;
+    color: #260120;
     margin-bottom: 25px;
     font-size: 20px;
 }
 .rodape .grupo-1 .box p{
-    color: #efefef;
+    color: #260120;
     margin-bottom: 10px;
 }
 
@@ -62,7 +62,7 @@
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #fff;
+    color: #260120;
     margin-right: 10px;
     
     text-align: center;
@@ -72,7 +72,7 @@
     color: aqua;
 }
 .rodape .grupo-2{
-    background-color: #000;
+    background-color: #260120;
     padding: 15px 10px;
     text-align: center;
     color: #fff;

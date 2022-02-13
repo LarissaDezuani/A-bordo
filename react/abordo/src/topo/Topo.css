@@ -29,15 +29,21 @@ body {
   
 }
 
+.ativaCor{
+  /* background-color: #260120; */
+  background-color: #D8D8D8;
+}
+
 header {
   min-height: 60px;
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  background: #260120 ;
+  left: 0;  
   z-index: 2;
+  background-color: transparent;
   box-shadow: 0 5px 0px #00000000, 0 8px 12px rgb(0 0 0 / 36%);
+  transition: all ease 0.1s;
 }
 
 header h1 {
@@ -45,8 +51,8 @@ header h1 {
 }
 
 header h1 a {
-  color: #F4F0F4;; 
-  text-shadow: 0 1px 0 #fff;
+  color: #260120;; 
+  text-shadow: 0 1px 0 #260120;
   text-decoration: none;
   
 }
@@ -68,7 +74,7 @@ header li:first-child {
 header li a {
   display: block;
   padding: 0 10px;
-  color: #F4F0F4;
+  color: #260120;
   font-size: 16px;
   line-height: 30px;
   text-decoration: none;
@@ -101,7 +107,7 @@ input#control-nav {
     bottom: 0;
     width: 250px;
     
-    background: #260120;
+    background: #D8D8D8;
     overflow-x: auto;
     z-index: 2;
     -webkit-transition: all 500ms ease;
@@ -136,7 +142,7 @@ input#control-nav {
     display: block;
     width: 30px;
     padding: 5px 0;
-    border: solid #fff;
+    border: solid #260120;
     border-width: 3px 0;
     z-index: 2;
     cursor: pointer;
@@ -146,7 +152,7 @@ input#control-nav {
     content: "";
     display: block;
     height: 3px;
-    background: #F4F0F4;
+    background: #260120;
   }
 
   .control-nav-close {
@@ -194,7 +200,7 @@ input#control-nav {
   }
 }
 a:not([href]):not([tabindex]) {
-  color: #fff;
+  color: #260120;
   text-decoration: none;
 }
 .user {

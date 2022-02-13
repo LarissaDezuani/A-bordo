@@ -1,26 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+//import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Sobre from "./components/Sobre"
-import Contato from "./components/Contato"
-import Destino from "./components/Destino"
-import Cadastro from "./components/Cadastro"
-import Promocoes from "./components/Promocoes"
-import Index from './components/index'
+import Contato from "./paginas/forms/Contato"
+import Destino from "./paginas/forms/Destino"
+import Cadastro from "./paginas/forms/Cadastro"
+import Promocoes from "./paginas/Promocoes/Promocoes"
+import Index from './paginas/home/index'
+import Login from "./paginas/forms/Login"
 
 //ReactDOM e parametro = render
 ReactDOM.render(
   <BrowserRouter>
      <Routes>
-        <Route element = { <App /> } path="/" exact/>
+        {/* <Route element = { <App /> } path="/" /> */}
         <Route element = { <Sobre/>} path="/sobre"/>
         <Route element = { <Contato/> } path="/contato"/>
         <Route element = { <Destino/> } path="/destino"/>
         <Route element = { <Cadastro/> } path="/cadastro"/>
         <Route element = { <Promocoes/> } path="/promocoes" />
-        <Route element = { <Index/> } path="/index" />
+        <Route element = { <Index/> } path="/" exact/>
+        <Route element={ <Login/> } path="/login"/>
       </Routes>
   </BrowserRouter>,
   document.getElementById('root')

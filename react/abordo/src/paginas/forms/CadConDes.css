@@ -1,0 +1,212 @@
+
+.botao{
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    border-color: #260120; 
+    border-style: solid;
+    color: #260120;
+    font-size: 120%;
+    border-radius: 1.7rem;
+    cursor: pointer;
+    border: 0.1rem solid #260120;
+    cursor: pointer;
+    text-align: center;
+    width: 174px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 1%;
+    /*display: block;
+    margin: 0 auto;*/
+}
+/*O alling- content alinha as divs verdicalmente
+
+justify-content alinha as divs horisontalmente*/
+.botao:hover{
+    background-color: #260120;
+    color: rgb(253, 253, 253);
+    border-color: #260120;
+
+    transition-duration: 700ms;
+    transition-timing-function: ease-in-out ;
+    /*de fora para dentro a transição de cores*/
+}
+
+/*login*/
+.log{
+    display: flex;
+    width: 100%; 
+    margin: 43px 0 10px 0;
+    justify-content: space-around;
+    align-items: center; 
+    color: #260120;
+}
+.log p{
+    font-family: Nunito, sans-serif;
+    color: #260120;
+}
+/*fim login*/
+.contato {
+    margin: 0 auto;
+    width: 50%;
+    
+    
+    margin-top: 55px;
+
+}/*
+.contato > form > input[type="text"], input[type="email"], input[type="textarea"] {
+    width: 100%;
+}*/
+.input{
+    text-align: center;
+
+
+}
+.card h2{
+    text-align: center;
+    font-size: x-large;
+    color: #260120;
+}
+
+#contato {
+
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    height: 100vh;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+    #destino {
+
+        display: flex;
+        
+        align-items: center;
+        
+        justify-content: center;
+        
+        height: 100vh;
+        
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+    
+    .card {
+    
+    background-color: rgba(255, 255, 255, 0.993);
+    
+    padding: 40px;
+    
+    border-radius: 2px;
+    
+    width:459px;
+    box-shadow: 0 2px 20px #D8D8D8;
+    
+    margin-top: 174px;
+    }
+    
+    .card-header {
+    
+    padding-bottom: 10px;
+    
+    opacity: 0.8;
+    
+    color: #341940;
+    
+    }
+    
+    
+    
+    .card-content-area label {
+    
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: #260120;
+    
+    
+    }
+    
+    .card-content-area {
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    padding:10px 0;
+    
+    
+    
+    
+    }
+    .card-content-area textarea{
+        resize: none;
+        border: 0.1rem solid #260120;
+        cursor: pointer;
+        /* text-align: center; */
+    border-radius: 0.7rem;
+    }
+    .card-content-area input{
+        border: 0.1rem solid #260120;
+        cursor: pointer;
+        /* text-align: center; */
+        border-radius: 0.7rem;
+        height: 27px;
+    }
+    
+    .card-content-area area{
+       
+        height: 27px;
+        resize: none;
+    }
+    
+    .card-footer {
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    }
+    
+  
+    
+    .card-footer a {
+    
+    text-align: center;
+    
+    font-size: 12px;
+    
+    opacity: 0.8;
+    
+    color: #341940;
+    
+    text-decoration: none;
+    
+    }
+    .card-header h2{
+        text-align: center;
+        color: #341940;
+    }
+
+
+
+    /**/
+
+
+    .container-box {
+        width: 100%;
+        height: 100%;
+        max-width: 1046px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 50%;
+        grid-template-rows: 224px 19px 25vh;
+            grid-template-areas:
+            'bla bla bla'
+            'article article article '
+            'footer footer footer';    
+    
+    }
