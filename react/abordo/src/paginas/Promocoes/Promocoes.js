@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Topo from '../../topo/Topo';
 import alagoas from './img/alagoas.jpg';
 import saopaulo from './img/saopaulo.jpg';
@@ -9,13 +9,16 @@ import bahia from './img/bahia.jpeg'
 import './Promocoes.css';
 import Rodape from '../../rodape/Rodape'
 
-import App from '../../App'
+//import App from '../../App'
+import {lazy, Suspense} from 'react';
+const App = lazy(() => import('../../App'))
 function Promocoes(){
     return(
      
 <div>
-  
+  <Suspense fallback={<p>Carregamento</p>}>
     <App></App>
+  </Suspense>  
     <main className='conteudo'>
 
     

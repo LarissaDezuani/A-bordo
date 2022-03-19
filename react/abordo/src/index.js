@@ -2,6 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+//import React, {useEffect, useState } from 'react';
+
+
+
+import App from './App';
+
 
 import Sobre from "./components/Sobre"
 import Contato from "./paginas/forms/Contato"
@@ -23,6 +29,8 @@ ReactDOM.render(
         <Route element = { <Promocoes/> } path="/promocoes" />
         <Route element = { <Index/> } path="/" exact/>
         <Route element={ <Login/> } path="/login"/>
+        
+
       </Routes>
   </BrowserRouter>,
   document.getElementById('root')

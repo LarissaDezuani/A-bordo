@@ -32,30 +32,8 @@ body {
 .ativaCor{
   /* background-color: #260120; */
   background-color: #260120;
+}
 
-}
-.ativaCor  h1 a{
-  /* background-color: #260120; */
-  
-  color: #fff; 
-
-}
-.ativaCor a:not([href]):not([tabindex]) {
-  color: #fff;
-  text-decoration: none;
-}
-.ativaCor li a {
-  display: block;
-  padding: 0 10px;
-  color: #fff;
-  font-size: 16px;
-  line-height: 30px;
-  text-decoration: none;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  font-weight: 500;
-  font-family: system-ui;
-}
 header {
   min-height: 60px;
   position: fixed;
@@ -73,7 +51,7 @@ header h1 {
 }
 
 header h1 a {
-  color: #fff; 
+  color: #260120;; 
   text-shadow: 0 1px 0 #260120;
   text-decoration: none;
   
@@ -129,7 +107,7 @@ input#control-nav {
     bottom: 0;
     width: 250px;
     
-    background: #260120;
+    background: #D8D8D8;
     overflow-x: auto;
     z-index: 2;
     -webkit-transition: all 500ms ease;
@@ -138,44 +116,6 @@ input#control-nav {
     -ms-transform: translate(100%, 0);
     transform: translate(100%, 0);
   }
-  .ativaCor nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 250px;
-    
-    background: #260120;
-    overflow-x: auto;
-    z-index: 2;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-    -webkit-transform: translate(100%, 0);
-    -ms-transform: translate(100%, 0);
-    transform: translate(100%, 0);
-  }
-  header li a {
-    display: block;
-    padding: 0 10px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 30px;
-    text-decoration: none;
-    transition: all 300ms ease;
-    font-weight: 500;
-    font-family: system-ui;
-}
-.ativaCor li a {
-  display: block;
-  padding: 0 10px;
-  color: #fff;
-  font-size: 16px;
-  line-height: 30px;
-  text-decoration: none;
-  transition: all 300ms ease;
-  font-weight: 500;
-  font-family: system-ui;
-}
 
   header ul.list-auto {
     padding: 0;
@@ -188,9 +128,6 @@ input#control-nav {
   }
 
   header li a {
-    padding: 15px 10px;
-  }
-  .ativaCor li a {
     padding: 15px 10px;
   }
 
@@ -211,24 +148,6 @@ input#control-nav {
     cursor: pointer;
   }
 
-  .ativaCor .control-nav { /* label icon */
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: block;
-    width: 30px;
-    padding: 5px 0;
-    border: solid #fff;
-    border-width: 3px 0;
-    z-index: 2;
-    cursor: pointer;
-  }
-  .ativaCor .control-nav:before {
-    content: "";
-    display: block;
-    height: 3px;
-    background: #fff;
-  }
   .control-nav:before {
     content: "";
     display: block;
@@ -244,7 +163,7 @@ input#control-nav {
     left: 0;
     display: block;
     z-index: 1;
-    background: rgba(207, 193, 193, 0.4);
+    background: rgba(0,0,0,0.4);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     -webkit-transform: translate(100%, 0);
@@ -285,7 +204,6 @@ a:not([href]):not([tabindex]) {
   text-decoration: none;
 }
 .user {
-  
   cursor: pointer;
   width: 30px;
 }

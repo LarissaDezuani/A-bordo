@@ -1,4 +1,5 @@
 import './Rodape.css'
+import React from 'react';
 import insta from '../rodape/instaroxo.png'
 import face from './faceroxo.png'
 import { Link } from "react-router-dom";
@@ -13,6 +14,10 @@ function Rodape(){
                 <figure>
                     <a href="#">
                         <h2>Abordo</h2>
+                        <h2>Endereço</h2>
+                        <p>Rua Ferreira BF, Mezanino 101 Bossa Nova Mall, Centro, SP, CEP.: 00000-000</p>
+                        <h2>Contato</h2>
+                        <p>contato@abordo.com.br</p>
                     </a>
                 </figure>
             </div>

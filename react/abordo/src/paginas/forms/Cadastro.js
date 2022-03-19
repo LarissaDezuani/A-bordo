@@ -10,46 +10,40 @@ const Cadastro = () => {
     return(
         <div>
             
-                <App></App>
-                <div id="contato">
-        <form class="card">
+            <App></App>
+            <div id="contato">
+                <form class="card">
 
-        <h2>Cadastro</h2>
+                    <h2>Cadastro</h2>
 
-<div className="card-content-area">
-    <label for="nome">Nome:</label>
-    
-    <input type="text" id="nome" name="nome"></input>
-    
-</div>
-<div className="card-content-area">
-    
-<label for="cpf">CPF:</label>
+                        <div className="card-content-area">
+                            <label for="nome">Nome:</label>
+                
+                            <input type="text" id="nome" name="nome"></input>
+                
+                        </div>
+                        <div className="card-content-area">
+                
+                            <label for="cpf">CPF:</label>
 
-<input type="text" id="cpf" name="cpf"></input>
+                            <input type="text" id="cpf" name="cpf"></input>
 
-</div>
-<div className="card-content-area">
-    
-<label for="nascimento">Nascimento:</label>
+                        </div>
+                        <div className="card-content-area">
+                
+                            <label for="nascimento">Nascimento:</label>
 
-<input type="date" id="nascimento" name="nascimento"></input>
+                            <input type="date" id="nascimento" name="nascimento"></input>
 
-</div>
-           <div>
+                        </div>
+                        <div className="botaoform">
+                        
+                            <a href="#"><input class="botao" type="submit" value="Enviar"></input> </a>        
+                    
             
-            <a href="#"><input class="botao" type="submit" value="Enviar"></input> </a>        
-        
- 
-           </div> 
-        </form>
-    </div>
-
-
-
-
-
-               
+                        </div> 
+                </form>
+            </div>  
             <Rodape></Rodape>
         </div>
     )

@@ -1,3 +1,16 @@
+.bannerDes{
+    height: 70vh;
+    background: url("mapa.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1000;
+    
+  }
+  .body{
+    display: list-item !important;
+
+  }
 
 .botao{
     align-content: center;
@@ -29,6 +42,9 @@ justify-content alinha as divs horisontalmente*/
     transition-duration: 700ms;
     transition-timing-function: ease-in-out ;
     /*de fora para dentro a transição de cores*/
+}
+.botaoform{
+    align-self: center;
 }
 
 /*login*/
@@ -210,3 +226,15 @@ justify-content alinha as divs horisontalmente*/
             'footer footer footer';    
     
     }
+
+    @media screen and (max-width: 460px){
+        .card{
+            background-color: rgba(255, 255, 255, 0.993);
+            padding: 40px;
+            border-radius: 2px;
+            width: 300px;
+            box-shadow: 0 2px 20px #d8d8d8;
+            margin-top: 0;
+        }
+    
+}

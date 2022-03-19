@@ -11,17 +11,18 @@ const Destino = () => {
         <div>
                 {/* <Topo></Topo> */}
                 <App></App>
+               
                 <div id="contato">
                     <form class="card">
 
                     <h2>PASSAGENS</h2>
                         
-                        <div class="card-content-area">
+                        {/* <div class="card-content-area">
                             <label for="cpfCli">Digite seu CPF?</label>
                             
                             <input type="text" id="cpfCli" name="cpfCli"></input>
                             
-                        </div>
+                        </div> */}
 
                         <div class="card-content-area">
                             <label for="localSaidaDestino">De onde você está saindo?</label>
@@ -53,9 +54,9 @@ const Destino = () => {
                             <input type="date" id="dataDestino" name="dataDestino"></input>
                         
                         </div>
-                    <div>
-                        <a href="#"><input class="botao" type="submit" value="Enviar"></input> </a>        
-                    </div> 
+                        <div className="botaoform">
+                            <a href="#"><input class="botao" type="submit" value="Buscar"></input> </a>        
+                        </div> 
                     </form>
                 </div>          
          <Rodape></Rodape>   

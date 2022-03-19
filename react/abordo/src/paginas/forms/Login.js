@@ -10,45 +10,41 @@ const Login = () => {
         <div>
             <App></App>
                 
-                <div id="contato">
-        <form class="card">
+        
+            <div id="contato">
+                <form class="card">
 
-            <h2>LOGIN</h2>
+                    <h2>LOGIN</h2>
 
-            <div class="card-content-area">
-                <label for="nome">Nome:</label>
+                    <div class="card-content-area">
+                        <label for="nome">Nome:</label>
+                                
+                        <input type="text" id="nome" name="nome"></input>
+                                
+                    </div>
+                    <div class="card-content-area">
                 
-                <input type="text" id="nome" name="nome"></input>
-                
-            </div>
-            <div class="card-content-area">
-                
-            <label for="senha">Senha:</label>
+                        <label for="senha">Senha:</label>
             
-            <input type="password" id="senha" name="senha"></input>
+                        <input type="password" id="senha" name="senha"></input>
             
             
 
-            </div>
+                    </div>
             
            
-           <div>
+                    <div className="botaoform">
             
-            <a href="#"><input class="botao" type="submit" value="Entrar"></input> </a>        
+                        <a href="#"><input class="botao" type="submit" value="Entrar"></input> </a>        
 
-           </div> 
-           <div className="log">
-                <a href='#'><p>Esqueci minha senha</p></a> 
-                <a ><Link to="/cadastro"><p>Cadastrar</p></Link></a>
+                    </div> 
+                    <div className="log">
+                        <a href='#'><p>Esqueci minha senha</p></a> 
+                        <a ><Link to="/cadastro"><p>Cadastrar</p></Link></a>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-
-
-
-
-
-               
+          
          <Rodape></Rodape>   
         </div>
     )

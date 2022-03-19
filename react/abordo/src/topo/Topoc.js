@@ -1,9 +1,9 @@
-import './Topo.css'
+import './Topoc.css'
 import React from 'react';
 import { Link } from "react-router-dom";
 import user from '../topo/userroxo.png'
 
-function Topo ({acao}){
+function Topoc ({acao}){
     return(
 <header className={ acao ? 'ativaCor' : '' }>
         <h1 class="float-l">
@@ -29,13 +29,12 @@ function Topo ({acao}){
               <a ><Link to="/promocoes"><h5>Promoções</h5></Link></a>
             </li>
             <li class="list-user">
-            <a ><Link to="/login"><h5>| Login</h5></Link></a>
+            <a ><Link to="/login"><img class="user" src={user} alt="user"></img></Link></a>
 
             </li>
-           
           </ul>
         </nav>
       </header>
     );
 }
-export default Topo;
+export default Topoc;
